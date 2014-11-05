@@ -9,8 +9,9 @@ FROM oocoder/nodejs
 
 # Set instructions on build.
 ONBUILD COPY package.json /app/
-ONBUILD RUN npm install
+ONBUILD RUN npm install 
 ONBUILD COPY . /app
+ONBUILD RUN npm test 
 
 # Define working directory.
 WORKDIR /app
