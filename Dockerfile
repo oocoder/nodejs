@@ -1,4 +1,4 @@
-# Debian flavor DockerFile to pull Upstream Nodejs v0.10.33, NPM v2.1.3
+# Debian flavor DockerFile to pull Upstream Nodejs, NPM
 FROM debian:wheezy
 
 RUN apt-get update && apt-get install -y \
@@ -7,8 +7,8 @@ RUN apt-get update && apt-get install -y \
 # Import public gpg keys from "Timothy J Fontaine (Work) <tj.fontaine@joyent.com>" 
 RUN curl -SLk "https://hkps.pool.sks-keyservers.net/pks/lookup?op=get&search=0x0246406D" | gpg --import
 
-ENV NODE_VERSION 0.10.33
-ENV NPM_VERSION 2.1.3
+ENV NODE_VERSION 0.12.2
+ENV NPM_VERSION 2.5.1
 
 RUN curl -SLO "http://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-x64.tar.gz" \
 	&& curl -SLO "http://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc" \
