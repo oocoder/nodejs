@@ -1,5 +1,5 @@
 # Debian flavor DockerFile to pull Upstream Nodejs, NPM
-FROM debian:wheezy
+FROM debian:jessie
 
 RUN apt-get update && apt-get install -y \
 		ca-certificates \
