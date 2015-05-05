@@ -3,6 +3,7 @@ FROM debian:jessie
 
 RUN apt-get update && apt-get install -y \
 		ca-certificates \
+        git-core \
 		curl
 # Import public gpg keys from "Timothy J Fontaine (Work) <tj.fontaine@joyent.com>" 
 RUN curl -SLk "https://hkps.pool.sks-keyservers.net/pks/lookup?op=get&search=0x0246406D" | gpg --import
