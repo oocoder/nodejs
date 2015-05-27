@@ -2,6 +2,7 @@
 FROM debian:jessie
 
 RUN apt-get update && apt-get install -y \
+        nano \
 		ca-certificates \
 		curl
 # Import public gpg keys from "Timothy J Fontaine (Work) <tj.fontaine@joyent.com>" 
@@ -19,4 +20,4 @@ RUN curl -SLO "http://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-x
 	&& npm install -g npm@"$NPM_VERSION" \
 	&& npm cache clear
 
-CMD [ "node" ]
+ENTRYPOINT ["node"]
