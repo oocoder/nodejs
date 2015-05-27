@@ -18,6 +18,3 @@ WORKDIR /app
 
 # Define default command.
 CMD ["npm", "start"]
-
-# Expose ports.
-EXPOSE 3000
