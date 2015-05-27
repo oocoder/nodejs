@@ -1,4 +1,4 @@
-nodejs
+nodejs 0.12.2
 ======
 
-nodejs dockerfile using Debian (wheezy) flavor
+nodejs dockerfile using Debian (jessie) flavor
