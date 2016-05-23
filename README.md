@@ -1,4 +1,4 @@
-nodejs 0.12.2
+nodejs 4.4.4 LTS
 ======
 
 nodejs dockerfile using Debian (jessie) flavor
