@@ -10,7 +10,7 @@ RUN apt-get update && apt-get install -y \
 #RUN curl -SLk "https://hkps.pool.sks-keyservers.net/pks/lookup?op=get&search=0x0246406D" | gpg --import
 
 ENV NODE_VERSION 4.4.4
-ENV NPM_VERSION 2.14.12
+ENV NPM_VERSION 3.8.7
 
 RUN curl -SLO "http://nodejs.org/dist/latest-v4.x/node-v$NODE_VERSION-linux-x64.tar.gz" \
 	&& curl -SLO "http://nodejs.org/dist/latest-v4.x/SHASUMS256.txt.asc" \
